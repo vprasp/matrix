@@ -5,7 +5,8 @@ cd max7219
 sudo python setup.py install
 
 sudo raspi-config
-Option "A6 spi" enable
+select "5 interfacing" 
+then select "P4 SPI" enable
 
 sudo apt-get install python-dev python-pip
 sudo pip install max7219
